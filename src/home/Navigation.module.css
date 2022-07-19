@@ -47,7 +47,10 @@
     }
 
     .show__menu{
+        visibility: visible;
         padding-top: 8vmin;
+        transition: 0.2s;
+        height: 130px;
     }
 
     .show__menu a:hover {
@@ -57,6 +60,8 @@
     }
 
     .hide__menu{
-        display: none;
+        visibility: hidden;
+        transition: 0.2s;
+        height: 0;
     }
 }
