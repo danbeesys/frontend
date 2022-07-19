@@ -21,8 +21,17 @@
     background-color: gray;
 }
 
+.toggleNav {
+    display:none;
+    float: right;
+    height: 40px;
+}
+
 @media screen and (max-width: 872px) {
     .navigation {
         display: none;
+    }
+    .toggleNav {
+        display: block;
     }
 }
