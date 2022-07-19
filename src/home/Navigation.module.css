@@ -14,21 +14,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 8vmin;
 }
 
 .navigation a:hover {
     padding: 20px;
     background-color: gray;
+    transition: 0.1s;
 }
 
 .toggleNav {
     display: none;
+    transition: 0.1s;
 }
 
 .toggleImg {
     width: 8vmin;
     display: block;
     float: right;
+    padding-top: 0;
 }
 
 @media screen and (max-width: 872px) {
@@ -43,11 +47,16 @@
     }
 
     .show__menu{
-        transition: 2s;
+        padding-top: 8vmin;
+    }
+
+    .show__menu a:hover {
+        padding: 8px;
+        background-color: gray;
+        transition: 0.1s;
     }
 
     .hide__menu{
         display: none;
-        transition: 2s;
     }
 }
