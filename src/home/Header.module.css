@@ -1,0 +1,41 @@
+.app__logo {
+    height: 8vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .app__logo {
+        animation: app__logo__spin infinite 20s linear;
+    }
+}
+
+.app__header__box {
+    background-color: #2d2d31;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #e8dfc2;
+}
+
+.app__header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__header__text {
+    font-size: 6vmin;
+    font-weight: 300;
+}
+
+@keyframes app__logo__spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
