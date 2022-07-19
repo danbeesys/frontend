@@ -22,9 +22,13 @@
 }
 
 .toggleNav {
-    display:none;
+    display: none;
+}
+
+.toggleImg {
+    width: 8vmin;
+    display: block;
     float: right;
-    height: 40px;
 }
 
 @media screen and (max-width: 872px) {
@@ -33,5 +37,17 @@
     }
     .toggleNav {
         display: block;
+        float: right;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .show__menu{
+        transition: 2s;
+    }
+
+    .hide__menu{
+        display: none;
+        transition: 2s;
     }
 }
