@@ -18,7 +18,7 @@ function NavigationList({flex, toggle}) {
     return <div className={clazz}>
         <Link to={"/"} className={style.elem}>소개</Link>
         <Link to={"/adviser"} className={style.elem}>상담사 약력</Link>
-        <Link to={"/"} className={style.elem}>찾아오시는 길</Link>
+        <Link to={"/directions"} className={style.elem}>찾아오시는 길</Link>
         <Link to={"/"} className={style.elem}>가나다바라마사아</Link>
     </div>
 }
