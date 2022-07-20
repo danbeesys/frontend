@@ -1,0 +1,22 @@
+.main__box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vmin;
+}
+
+.picture {
+    width: 30vmin;
+    height: 30vmin;
+}
+
+.content {
+    font-size: 6vmin;
+    text-align: center;
+}
+
+.list {
+    font-size: 3vmin;
+    text-align: center;
+}
