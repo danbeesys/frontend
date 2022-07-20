@@ -1,0 +1,12 @@
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-gap: 30px;
+    padding: 50px 50px 50px 50px;
+}
+
+@media screen and (max-width: 1090px) {
+    .boxes {
+        grid-template-columns: 1fr;
+    }
+}
