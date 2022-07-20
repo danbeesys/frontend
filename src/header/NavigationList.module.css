@@ -7,14 +7,21 @@
     text-decoration: none;
     text-align: center;
     font-size: 15px;
+    color: #e8dfc2;
+}
+
+.elem:hover {
+    background-color: gray;
 }
 
 .horizon {
     display: flex;
+    flex-direction: row;
 }
 
 .vertical {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .show {

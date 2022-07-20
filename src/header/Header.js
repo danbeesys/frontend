@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import menu from "./menu.png";
 import menu_cancel from "./menu_cancel.png";
 import NavigationList from "./NavigationList";
+import {Link} from "react-router-dom";
 
 function Header() {
     const [mobileMode, setMobileMode] = useState(false);
@@ -19,8 +20,8 @@ function Header() {
         }
     }
     useEffect(() => {
+        handleResize();
         window.addEventListener('resize', handleResize);
-        return () => {window.addEventListener('resize', handleResize);}
     }, []);
     const [menuImage, setMenuImage] = useState(menu);
     const [toggled, setToggled] = useState(false);
@@ -37,10 +38,12 @@ function Header() {
     return (
         <div className={style.app__header__box}>
             <div className={style.app__header__plain__box}>
-                <header className={style.app__header__logo}>
+                <Link to={"/"} className={style.app_header__banner}>
+                    <header className={style.app__header__logo}>
                     <img src={logo} className={style.app__logo} alt="logo"/>
-                    <h2 className={style.app__header__text}>단비 심리 상담 연구소</h2>
-                </header>
+                    <h2>단비 심리 상담 연구소</h2>
+                    </header>
+                </Link>
                 {mobileMode ? null: <NavigationList flex={false}/>}
                 {mobileMode ? <img src={String(menuImage)} className={style.toggle__img} onClick={onMenuClick} alt=" ⁞ "/> : null}
             </div>

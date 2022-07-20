@@ -1,4 +1,5 @@
 import style from "./NavigationList.module.css"
+import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
 
 function NavigationList({flex, toggle}) {
@@ -15,10 +16,10 @@ function NavigationList({flex, toggle}) {
     }
 
     return <div className={clazz}>
-        <div className={style.elem}>소개</div>
-        <div className={style.elem}>상담사 약력</div>
-        <div className={style.elem}>찾아오시는 길</div>
-        <div className={style.elem}>가나다바라마사아</div>
+        <Link to={"/"} className={style.elem}>소개</Link>
+        <Link to={"/adviser"} className={style.elem}>상담사 약력</Link>
+        <Link to={"/"} className={style.elem}>찾아오시는 길</Link>
+        <Link to={"/"} className={style.elem}>가나다바라마사아</Link>
     </div>
 }
 

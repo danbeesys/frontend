@@ -22,8 +22,10 @@
     justify-content: center;
 }
 
-.app__header__text {
-    font-size: 6vmin;
+.app_header__banner {
+    text-decoration: none;
+    color: #e8dfc2;
+    font-size: 4vmin;
     font-weight: 300;
 }
 
