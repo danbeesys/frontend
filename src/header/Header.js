@@ -9,8 +9,12 @@ function Header() {
     const [mobileMode, setMobileMode] = useState(false);
     function handleResize() {
         if (window.innerWidth < 922) {
+            setToggled(false);
+            setMenuImage(menu);
             setMobileMode(true);
         } else {
+            setToggled(true);
+            setMenuImage(menu_cancel);
             setMobileMode(false);
         }
     }
@@ -37,10 +41,10 @@ function Header() {
                     <img src={logo} className={style.app__logo} alt="logo"/>
                     <h2 className={style.app__header__text}>단비 심리 상담 연구소</h2>
                 </header>
-                {mobileMode ? null: <NavigationList listing={"flex"}/>}
-                {mobileMode ? <img src={String(menuImage)} className={style.toggle__img} onClick={onMenuClick}/> : null}
+                {mobileMode ? null: <NavigationList flex={false}/>}
+                {mobileMode ? <img src={String(menuImage)} className={style.toggle__img} onClick={onMenuClick} alt=" ⁞ "/> : null}
             </div>
-            {mobileMode ? <NavigationList listing={"block"}/> : null}
+            {mobileMode ? <NavigationList flex={true} toggle={toggled}/> : null}
         </div>);
 }
 

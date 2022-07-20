@@ -6,4 +6,29 @@
     padding: 20px;
     text-decoration: none;
     text-align: center;
+    font-size: 15px;
+}
+
+.horizon {
+    display: flex;
+}
+
+.vertical {
+    display: block;
+}
+
+.show {
+    visibility: visible;
+    height: 270px;
+    opacity: 100%;
+    transition: 0.5s;
+    transition-property: height, opacity;
+}
+
+.hide {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s;
+    transition-property: height, opacity;
 }
