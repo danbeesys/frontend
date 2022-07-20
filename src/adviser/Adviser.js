@@ -1,4 +1,4 @@
-import Header from "../home/Header";
+import Header from "../header/Header";
 
 function Adviser() {
     return <div>

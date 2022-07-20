@@ -3,8 +3,8 @@ import {
     Routes,
     Route
 } from "react-router-dom";
-import Counsel from "../counsel/Counsel"
-import Adviser from "../adviser/Adviser"
+import Counsel from "./counsel/Counsel"
+import Adviser from "./adviser/Adviser"
 
 function App() {
   return (
